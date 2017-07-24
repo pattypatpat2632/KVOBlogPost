@@ -12,6 +12,7 @@
 		ECCF2A981F268AE7009EC93F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF2A961F268AE7009EC93F /* Main.storyboard */; };
 		ECCF2A9A1F268AE7009EC93F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCF2A991F268AE7009EC93F /* Assets.xcassets */; };
 		ECCF2A9D1F268AE7009EC93F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF2A9B1F268AE7009EC93F /* LaunchScreen.storyboard */; };
+		ECE953141F269C6D006D3E87 /* TextHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE953131F269C6D006D3E87 /* TextHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ECCF2A991F268AE7009EC93F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECCF2A9C1F268AE7009EC93F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCF2A9E1F268AE7009EC93F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE953131F269C6D006D3E87 /* TextHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				ECCF2A991F268AE7009EC93F /* Assets.xcassets */,
 				ECCF2A9B1F268AE7009EC93F /* LaunchScreen.storyboard */,
 				ECCF2A9E1F268AE7009EC93F /* Info.plist */,
+				ECE953131F269C6D006D3E87 /* TextHolder.swift */,
 			);
 			path = KVOBlogPost;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				ECCF2A951F268AE7009EC93F /* ViewController.swift in Sources */,
 				ECCF2A931F268AE7009EC93F /* AppDelegate.swift in Sources */,
+				ECE953141F269C6D006D3E87 /* TextHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				ECCF2AA31F268AE7009EC93F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

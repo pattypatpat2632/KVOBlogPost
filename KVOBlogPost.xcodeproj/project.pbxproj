@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA8CE211F30D8AC00BC4959 /* PatClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8CE201F30D8AC00BC4959 /* PatClock.swift */; };
 		ECCF2A931F268AE7009EC93F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF2A921F268AE7009EC93F /* AppDelegate.swift */; };
 		ECCF2A951F268AE7009EC93F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF2A941F268AE7009EC93F /* ViewController.swift */; };
 		ECCF2A981F268AE7009EC93F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF2A961F268AE7009EC93F /* Main.storyboard */; };
 		ECCF2A9A1F268AE7009EC93F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCF2A991F268AE7009EC93F /* Assets.xcassets */; };
 		ECCF2A9D1F268AE7009EC93F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCF2A9B1F268AE7009EC93F /* LaunchScreen.storyboard */; };
-		ECE953141F269C6D006D3E87 /* TextHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE953131F269C6D006D3E87 /* TextHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECA8CE201F30D8AC00BC4959 /* PatClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatClock.swift; sourceTree = "<group>"; };
 		ECCF2A8F1F268AE7009EC93F /* KVOBlogPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVOBlogPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCF2A921F268AE7009EC93F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCF2A941F268AE7009EC93F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		ECCF2A991F268AE7009EC93F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECCF2A9C1F268AE7009EC93F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCF2A9E1F268AE7009EC93F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECE953131F269C6D006D3E87 /* TextHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				ECCF2A991F268AE7009EC93F /* Assets.xcassets */,
 				ECCF2A9B1F268AE7009EC93F /* LaunchScreen.storyboard */,
 				ECCF2A9E1F268AE7009EC93F /* Info.plist */,
-				ECE953131F269C6D006D3E87 /* TextHolder.swift */,
+				ECA8CE201F30D8AC00BC4959 /* PatClock.swift */,
 			);
 			path = KVOBlogPost;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			files = (
 				ECCF2A951F268AE7009EC93F /* ViewController.swift in Sources */,
 				ECCF2A931F268AE7009EC93F /* AppDelegate.swift in Sources */,
-				ECE953141F269C6D006D3E87 /* TextHolder.swift in Sources */,
+				ECA8CE211F30D8AC00BC4959 /* PatClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

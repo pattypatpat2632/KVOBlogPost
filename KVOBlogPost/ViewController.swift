@@ -10,29 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let textField = UIStepper()
+ 
     let label = UILabel()
-    var textHolder = TextHolder()
+    let patClock = PatClock()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        addObserver(self, forKeyPath: #keyPath(textHolder.text), options: [.new, .old, .initial], context: nil)
-       
+        addObserver(self, forKeyPath: #keyPath(patClock.count), options: [.new, .old, .initial], context: nil)
+        patClock.startTimer()
     }
     
     func setup() {
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(textField)
-        textField.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor).isActive = true
-        textField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        textField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
-        textField.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1).isActive = true
-        textField.addTarget(self, action: #selector(stepperChanged), for: .valueChanged)
+
         
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
-        label.topAnchor.constraint(equalTo: textField.bottomAnchor).isActive = true
+        label.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
         label.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1).isActive = true
@@ -42,14 +36,10 @@ class ViewController: UIViewController {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         print("bserved value changed")
-        if keyPath == #keyPath(textHolder.text) {
+        if keyPath == #keyPath(patClock.count) {
             print("keypath changed")
-            label.text = textHolder.text
+            label.text = String(patClock.count)
         }
-    }
-    
-    func stepperChanged() {
-        textHolder.text = String(textField.value)
     }
 
 

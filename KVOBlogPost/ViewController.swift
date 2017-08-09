@@ -8,17 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ViewModelDelegate {
     
  
     let label = UILabel()
-    let patClock = PatClock()
+    let viewModel = ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        addObserver(self, forKeyPath: #keyPath(patClock.count), options: [.new, .old, .initial], context: nil)
-        patClock.startTimer()
+        
+        viewModel.delegate = self
+        viewModel.startObserving()
     }
     
     func setup() {
@@ -34,16 +35,17 @@ class ViewController: UIViewController {
         label.text = "Dumb"
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        print("bserved value changed")
-        if keyPath == #keyPath(patClock.count) {
-            print("keypath changed")
-            label.text = String(patClock.count)
-        }
+    @IBAction func buttonTapped(_ sender: Any) {
+        viewModel.timerChange()
+    }
+    
+    func update(text: String) {
+        label.text = text
     }
 
-
 }
+
+
 
 
 

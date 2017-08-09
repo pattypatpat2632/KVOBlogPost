@@ -11,6 +11,15 @@ import Foundation
 class PatClock: NSObject {
     dynamic var count: Int = 0
     var timer =  Timer()
+    var running: Bool = false {
+        didSet {
+            if running {
+                startTimer()
+            } else {
+                stopTimer()
+            }
+        }
+    }
     
     func startTimer() {
         print("TIMER STARTED")
@@ -18,5 +27,9 @@ class PatClock: NSObject {
             self.count += 1
             print(self.count)
         })
+    }
+    
+    func stopTimer() {
+        timer.invalidate()
     }
 }

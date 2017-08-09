@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC05B6EC1F3B8E09009DA871 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC05B6EB1F3B8E09009DA871 /* ViewModel.swift */; };
 		ECA8CE211F30D8AC00BC4959 /* PatClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8CE201F30D8AC00BC4959 /* PatClock.swift */; };
 		ECCF2A931F268AE7009EC93F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF2A921F268AE7009EC93F /* AppDelegate.swift */; };
 		ECCF2A951F268AE7009EC93F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF2A941F268AE7009EC93F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC05B6EB1F3B8E09009DA871 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		ECA8CE201F30D8AC00BC4959 /* PatClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatClock.swift; sourceTree = "<group>"; };
 		ECCF2A8F1F268AE7009EC93F /* KVOBlogPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVOBlogPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCF2A921F268AE7009EC93F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				ECCF2A921F268AE7009EC93F /* AppDelegate.swift */,
+				EC05B6EB1F3B8E09009DA871 /* ViewModel.swift */,
+				ECA8CE201F30D8AC00BC4959 /* PatClock.swift */,
 				ECCF2A941F268AE7009EC93F /* ViewController.swift */,
 				ECCF2A961F268AE7009EC93F /* Main.storyboard */,
 				ECCF2A991F268AE7009EC93F /* Assets.xcassets */,
 				ECCF2A9B1F268AE7009EC93F /* LaunchScreen.storyboard */,
 				ECCF2A9E1F268AE7009EC93F /* Info.plist */,
-				ECA8CE201F30D8AC00BC4959 /* PatClock.swift */,
 			);
 			path = KVOBlogPost;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				ECCF2A951F268AE7009EC93F /* ViewController.swift in Sources */,
 				ECCF2A931F268AE7009EC93F /* AppDelegate.swift in Sources */,
+				EC05B6EC1F3B8E09009DA871 /* ViewModel.swift in Sources */,
 				ECA8CE211F30D8AC00BC4959 /* PatClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

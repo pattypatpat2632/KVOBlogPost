@@ -17,14 +17,12 @@ class ViewController: UIViewController, ViewModelDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        
         viewModel.delegate = self
         viewModel.startObserving()
     }
     
     func setup() {
 
-        
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
         label.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor).isActive = true
@@ -32,7 +30,7 @@ class ViewController: UIViewController, ViewModelDelegate {
         label.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
         label.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1).isActive = true
         
-        label.text = "Dumb"
+        label.text = "0"
     }
     
     @IBAction func buttonTapped(_ sender: Any) {

@@ -1,0 +1,6 @@
+framework module Pods_KVOBlogPost {
+  umbrella header "Pods-KVOBlogPost-umbrella.h"
+
+  export *
+  module * { export * }
+}
